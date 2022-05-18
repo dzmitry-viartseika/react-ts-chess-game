@@ -1,11 +1,11 @@
-import React, {useState, useEffect, useReducer} from 'react';
+import React from 'react';
+import BoardTemplate from './components/Board/BoardTemplate';
 
-
-function App(): JSX.Element {
+const App = () => {
 
   return (
     <div className={'App'}>
-              wertey
+        <BoardTemplate />
     </div>
   );
 }
