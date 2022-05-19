@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {FC} from 'react';
+import {Cell} from "../../models/Cell";
 
-const CellTemplate = () => {
+interface ICellProps {
+    cell: Cell | null;
+}
+
+const CellTemplate: FC<ICellProps> = ({cell}) => {
     return (
-        <div className={'app__cell'}>
-            Cell
+        <div className={['app__cell', cell?.color].join('')}>
+            { cell?.figure }
         </div>
     )
 }
